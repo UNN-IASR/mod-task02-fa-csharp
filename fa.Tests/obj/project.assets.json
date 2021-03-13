@@ -6889,19 +6889,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/anton/.nuget/packages/": {}
+    "C:\\Users\\nikit\\.nuget\\packages\\": {},
+    "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anton/Desktop/NET/mod-task02-fa/fa.Tests/fa.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\nikit\\Desktop\\g\\mod-task02-fa-csharp\\fa.Tests\\fa.Tests.csproj",
       "projectName": "fa.Tests",
-      "projectPath": "/Users/anton/Desktop/NET/mod-task02-fa/fa.Tests/fa.Tests.csproj",
-      "packagesPath": "/Users/anton/.nuget/packages/",
-      "outputPath": "/Users/anton/Desktop/NET/mod-task02-fa/fa.Tests/obj/",
+      "projectPath": "C:\\Users\\nikit\\Desktop\\g\\mod-task02-fa-csharp\\fa.Tests\\fa.Tests.csproj",
+      "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nikit\\Desktop\\g\\mod-task02-fa-csharp\\fa.Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/anton/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -6911,9 +6915,10 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "targetAlias": "netcoreapp3.0",
           "projectReferences": {
-            "/Users/anton/Desktop/NET/mod-task02-fa/fa/fa.csproj": {
-              "projectPath": "/Users/anton/Desktop/NET/mod-task02-fa/fa/fa.csproj"
+            "C:\\Users\\nikit\\Desktop\\g\\mod-task02-fa-csharp\\fa\\fa.csproj": {
+              "projectPath": "C:\\Users\\nikit\\Desktop\\g\\mod-task02-fa-csharp\\fa\\fa.csproj"
             }
           }
         }
@@ -6926,6 +6931,7 @@
     },
     "frameworks": {
       "netcoreapp3.0": {
+        "targetAlias": "netcoreapp3.0",
         "dependencies": {
           "MSTest.TestAdapter": {
             "target": "Package",
@@ -6954,12 +6960,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
