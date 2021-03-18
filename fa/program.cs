@@ -1,4 +1,6 @@
-using System;
+﻿using System;
+
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,41 +8,125 @@ using System.Threading.Tasks;
 
 namespace fans
 {
-  public class State
-  {
-    public string Name;
-    public Dictionary<char, State> Transitions;
-    public bool IsAcceptState;
-  }
-
-
-  public class FA1
-  {
-    public bool? Run(IEnumerable<char> s)
+    public class State
     {
-      return false;
+        public string Name;
+        public Dictionary<char, State> Transitions;
+        public bool IsAcceptState;
     }
-  }
-
-  public class FA2
-  {
-    public bool? Run(IEnumerable<char> s)
+    public class FA1
     {
-      return false;
-    }
-  }
+        public static State a = new State()
+        {
+            Name = "a",
+            IsAcceptState = false,
+            Transitions = new Dictionary<char, State>()
+        };
+        public State b = new State()
+        {
+            Name = "b",
+            IsAcceptState = true,
+            Transitions = new Dictionary<char, State>()
+        };
+        public State c = new State()
+        {
+            Name = "c",
+            IsAcceptState = false,
+            Transitions = new Dictionary<char, State>()
+        };
 
-  class Program
-  {
-    static void Main(string[] args)
-    {
-      String s = "01111";
-      FA1 fa1 = new FA1();
-      bool? result1 = fa1.Run(s);
-      Console.WriteLine(result1);
-      FA2 fa2 = new FA2();
-      bool? result2 = fa2.Run(s);
-      Console.WriteLine(result2);
+        State InitialState = a;
+
+        public FA1()
+        {
+            a.Transitions['0'] = b;
+            a.Transitions['1'] = a;
+            b.Transitions['0'] = c;
+            b.Transitions['1'] = b;
+            c.Transitions['0'] = c;
+            c.Transitions['1'] = c;
+        }
+
+        public bool? Run(IEnumerable<char> s)
+        {
+            State current = InitialState;
+            foreach (var c in s) 
+            {
+                current = current.Transitions[c]; 
+                if (current == null)              
+                    return null;
+                
+            }
+            return current.IsAcceptState;         
+        }
     }
-  }
+    public class FA2
+    {
+        public static State a = new State()
+        {
+            Name = "a",
+            IsAcceptState = true,
+            Transitions = new Dictionary<char, State>()
+        };
+        public State b = new State()
+        {
+            Name = "b",
+            IsAcceptState = false,
+            Transitions = new Dictionary<char, State>()
+        };
+        public State c = new State()
+        {
+            Name = "c",
+            IsAcceptState = false,
+            Transitions = new Dictionary<char, State>()
+        };
+        public State d = new State()
+        {
+            Name = "d",
+            IsAcceptState = false,
+            Transitions = new Dictionary<char, State>()
+        };
+
+        State InitialState = a;
+
+        public FA2()
+        {
+            a.Transitions['0'] = b;
+            a.Transitions['1'] = d;
+            b.Transitions['0'] = a;
+            b.Transitions['1'] = c;
+            c.Transitions['0'] = d;
+            c.Transitions['1'] = b;
+            d.Transitions['0'] = c;
+            d.Transitions['1'] = a;
+        }
+
+        public bool? Run(IEnumerable<char> s)
+        {
+            State current = InitialState;
+            foreach (var c in s)
+            {
+                current = current.Transitions[c];
+                if (current == null)
+                    return null;
+
+            }
+            return current.IsAcceptState;
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String s = "10010110";
+            FA1 fa = new FA1();
+            bool? result = fa.Run(s);
+            Console.WriteLine(result);
+            
+            FA2 fa2 = new FA2();
+
+            bool? result2 = fa2.Run(s);
+            Console.WriteLine(result2);
+        }
+    }
 }
