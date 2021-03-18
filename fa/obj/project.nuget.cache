@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zwTdoxHIWBncQS5Ju+TEUt+qLi8y1rwoT1mQoxMgz0iw6t4hnMKFUmX8Fp1k1I7FepeVgdILaAN/WZMlmiwAdQ==",
+  "success": true,
+  "projectFilePath": "F:\\Projects\\MIPS\\mod-task02-fa-csharp\\fa\\fa.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ANDREW\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ANDREW\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
