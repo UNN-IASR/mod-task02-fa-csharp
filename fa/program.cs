@@ -14,8 +14,8 @@ namespace fans
   }
 
 
-  public class FA1
-  {
+    public class FA1
+    {
         public static State a = new State()
         {
             Name = "a",
@@ -25,13 +25,13 @@ namespace fans
         public State b = new State()
         {
             Name = "b",
-            IsAcceptState = false,
+            IsAcceptState = true,
             Transitions = new Dictionary<char, State>()
         };
         public State c = new State()
         {
             Name = "c",
-            IsAcceptState = true,
+            IsAcceptState = false,
             Transitions = new Dictionary<char, State>()
         };
 
@@ -46,7 +46,6 @@ namespace fans
             c.Transitions['0'] = c;
             c.Transitions['1'] = c;
         }
-
         public bool? Run(IEnumerable<char> s)
         {
             State current = InitialState;
@@ -56,16 +55,16 @@ namespace fans
                 if (current == null)
                     return null;
             }
-            return current.IsAcceptState; 
+            return current.IsAcceptState;
         }
     }
 
-  public class FA2
-  {
+    public class FA2
+    {
         public static State a = new State()
         {
             Name = "a",
-            IsAcceptState = false,
+            IsAcceptState = true,
             Transitions = new Dictionary<char, State>()
         };
         public State b = new State()
@@ -77,7 +76,7 @@ namespace fans
         public State c = new State()
         {
             Name = "c",
-            IsAcceptState = true,
+            IsAcceptState = false,
             Transitions = new Dictionary<char, State>()
         };
         public State d = new State()
@@ -86,7 +85,6 @@ namespace fans
             IsAcceptState = false,
             Transitions = new Dictionary<char, State>()
         };
-
 
         State InitialState = a;
 
@@ -115,7 +113,7 @@ namespace fans
         }
     }
 
-  class Program
+    class Program
   {
     static void Main(string[] args)
     {
