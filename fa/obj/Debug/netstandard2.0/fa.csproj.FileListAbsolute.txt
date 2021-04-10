@@ -6,3 +6,12 @@
 /Users/anton/Desktop/NET/mod-task02-fa/fa/obj/Debug/netstandard2.0/fa.AssemblyInfo.cs
 /Users/anton/Desktop/NET/mod-task02-fa/fa/obj/Debug/netstandard2.0/fa.dll
 /Users/anton/Desktop/NET/mod-task02-fa/fa/obj/Debug/netstandard2.0/fa.pdb
+D:\mod-task02-fa-csharp\fa\bin\Debug\netstandard2.0\fa.deps.json
+D:\mod-task02-fa-csharp\fa\bin\Debug\netstandard2.0\fa.dll
+D:\mod-task02-fa-csharp\fa\bin\Debug\netstandard2.0\fa.pdb
+D:\mod-task02-fa-csharp\fa\obj\Debug\netstandard2.0\fa.csprojAssemblyReference.cache
+D:\mod-task02-fa-csharp\fa\obj\Debug\netstandard2.0\fa.AssemblyInfoInputs.cache
+D:\mod-task02-fa-csharp\fa\obj\Debug\netstandard2.0\fa.AssemblyInfo.cs
+D:\mod-task02-fa-csharp\fa\obj\Debug\netstandard2.0\fa.csproj.CoreCompileInputs.cache
+D:\mod-task02-fa-csharp\fa\obj\Debug\netstandard2.0\fa.dll
+D:\mod-task02-fa-csharp\fa\obj\Debug\netstandard2.0\fa.pdb

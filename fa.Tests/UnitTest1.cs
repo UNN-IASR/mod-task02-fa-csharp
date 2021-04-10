@@ -1,6 +1,9 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using fans;
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+using System;
+
 namespace NET
 {
     [TestClass]

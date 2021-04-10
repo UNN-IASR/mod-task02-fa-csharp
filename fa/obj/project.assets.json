@@ -30,7 +30,7 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -180,28 +180,35 @@
     ]
   },
   "packageFolders": {
-    "/Users/anton/.nuget/packages/": {}
+    "C:\\Users\\bakan\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anton/Desktop/NET/mod-task02-fa/fa/fa.csproj",
+      "projectUniqueName": "D:\\mod-task02-fa-csharp\\fa\\fa.csproj",
       "projectName": "fa",
-      "projectPath": "/Users/anton/Desktop/NET/mod-task02-fa/fa/fa.csproj",
-      "packagesPath": "/Users/anton/.nuget/packages/",
-      "outputPath": "/Users/anton/Desktop/NET/mod-task02-fa/fa/obj/",
+      "projectPath": "D:\\mod-task02-fa-csharp\\fa\\fa.csproj",
+      "packagesPath": "C:\\Users\\bakan\\.nuget\\packages\\",
+      "outputPath": "D:\\mod-task02-fa-csharp\\fa\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/anton/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\bakan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {}
         }
       },
@@ -213,6 +220,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "NETStandard.Library": {
             "suppressParent": "All",
@@ -231,7 +239,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
