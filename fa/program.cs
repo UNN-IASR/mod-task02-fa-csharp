@@ -116,8 +116,6 @@ namespace fans
 
   class Program
   {
-    static void Main(string[] args)
-    {
         static void Main(string[] args)
         {
             String s = "";
@@ -139,6 +137,5 @@ namespace fans
                 s = Console.ReadLine();
             }
         }
-    }
   }
 }
