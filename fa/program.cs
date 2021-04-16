@@ -41,11 +41,11 @@ namespace fans
 
         public FA1()
         {
-            a.Transitions['0'] = a;
-            a.Transitions['1'] = b;
+            a.Transitions['0'] = b;
+            a.Transitions['1'] = a;
             b.Transitions['0'] = c;
-            b.Transitions['1'] = a;
-            c.Transitions['0'] = b;
+            b.Transitions['1'] = b;
+            c.Transitions['0'] = c;
             c.Transitions['1'] = c;
         }
 
@@ -91,12 +91,12 @@ namespace fans
 
         public FA2()
         {
-            a.Transitions['0'] = a;
+            a.Transitions['0'] = b;
             a.Transitions['1'] = b;
             b.Transitions['0'] = c;
-            b.Transitions['1'] = a;
+            b.Transitions['1'] = c;
             c.Transitions['0'] = b;
-            c.Transitions['1'] = c;
+            c.Transitions['1'] = b;
         }
 
         public bool? Run(IEnumerable<char> s)
