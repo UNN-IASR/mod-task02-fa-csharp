@@ -142,7 +142,7 @@ namespace fans
   {
     static void Main(string[] args)
     {
-      Console.WriteLine(result2);
+      
     }
   }
 }
